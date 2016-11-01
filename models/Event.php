@@ -186,7 +186,7 @@ class Event extends DbModel
     public static function getRelations()
     {
         return [
-            'category' => [DbRelations::BELONGS_TO, '\app\models\EventCategory', 'category_id'],
+            'category' => [DbRelations::BELONGS_TO, 'mpf\modules\calendar\models\EventCategory', 'category_id'],
             'author' => [DbRelations::BELONGS_TO, '\app\models\User', 'author_id'],
             'requirements' => [DbRelations::HAS_MANY, EventRequirement::className(), 'event_id']
         ];

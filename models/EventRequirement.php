@@ -63,7 +63,7 @@ class EventRequirement extends DbModel
     public static function getRelations()
     {
         return [
-            'event' => [DbRelations::BELONGS_TO, '\app\models\Event', 'event_id']
+            'event' => [DbRelations::BELONGS_TO, '\mpf\modules\calendar\models\Event', 'event_id']
         ];
     }
 

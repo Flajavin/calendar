@@ -61,8 +61,8 @@ class EventParticipant extends DbModel
     public static function getRelations()
     {
         return [
-            'event' => [DbRelations::BELONGS_TO, '\app\models\Event', 'event_id'],
-            'requirement' => [DbRelations::BELONGS_TO, '\app\models\EventRequirement', 'event_requirement_id'],
+            'event' => [DbRelations::BELONGS_TO, '\mpf\modules\calendar\models\Event', 'event_id'],
+            'requirement' => [DbRelations::BELONGS_TO, '\mpf\modules\calendar\models\EventRequirement', 'event_requirement_id'],
             'user' => [DbRelations::BELONGS_TO, '\app\models\User', 'user_id']
         ];
     }

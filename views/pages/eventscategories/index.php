@@ -1,12 +1,20 @@
 <?= \app\components\htmltools\Page::title('Categorii Evenimente', [
     [
         'url' => ['eventscategories', 'index'],
-        'label' => 'Lista',
+        'label' => 'Categorii',
         'htmlOptions' => ['class' => 'selected']
     ],
     [
         'url' => ['eventscategories', 'add'],
         'label' => 'Categorie Noua'
+    ],
+    [
+        'url' => ['events', 'index'],
+        'label' => 'Evenimente'
+    ],
+    [
+        'url' => ['eventstemplates', 'index'],
+        'label' => 'Sabloane'
     ]
 ]); ?>
 

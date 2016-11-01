@@ -9,12 +9,12 @@
 namespace mpf\modules\calendar\controllers;
 
 
-use app\components\SqlCrudController;
+use mpf\modules\calendar\components\SqlCrudController;
 use mpf\modules\calendar\models\Event;
 
 class Events extends SqlCrudController
 {
-    public $modelName = '\app\models\Event';
+    public $modelName = '\mpf\modules\calendar\models\Event';
 
     public function actionActions()
     {

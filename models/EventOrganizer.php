@@ -56,7 +56,7 @@ class EventOrganizer extends DbModel
     public static function getRelations()
     {
         return [
-            'event' => [DbRelations::BELONGS_TO, '\app\models\Event', 'event_id'],
+            'event' => [DbRelations::BELONGS_TO, '\mpf\modules\calendar\models\Event', 'event_id'],
             'user' => [DbRelations::BELONGS_TO, '\app\models\User', 'user_id']
         ];
     }

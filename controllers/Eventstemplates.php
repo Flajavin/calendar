@@ -9,7 +9,7 @@
 namespace mpf\modules\calendar\controllers;
 
 
-use app\components\SqlCrudController;
+use mpf\modules\calendar\components\SqlCrudController;
 
 class Eventstemplates extends SqlCrudController
 {

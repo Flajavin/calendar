@@ -1,7 +1,16 @@
 <?= \app\components\htmltools\Page::title('Sabloane Evenimente', [
     [
         'url' => ['eventstemplates', 'index'],
-        'label' => 'Lista'
+        'label' => 'Sabloane',
+        'htmlOptions' => ['class' => 'selected']
+    ],
+    [
+        'url' => ['eventscategories', 'index'],
+        'label' => 'Categorii'
+    ],
+    [
+        'url' => ['events', 'index'],
+        'label' => 'Evenimente'
     ]
 ]); ?>
 

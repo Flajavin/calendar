@@ -10,6 +10,10 @@
     [
         'url' => ['events', 'create'],
         'label' => 'Create Event'
+    ],
+    [
+        'url' => ['events', 'index'],
+        'label' => 'Admin'
     ]
 ]); ?>
 

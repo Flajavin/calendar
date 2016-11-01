@@ -40,14 +40,14 @@
     'columns' => [
         'title',
         'category_id' => [
-            'filter' => \mpf\helpers\ArrayHelper::get()->transform(\app\models\EventCategory::findAll(), ['id' => 'name_ro']),
-            'value' => function (\app\models\Event $event) {
+            'filter' => \mpf\helpers\ArrayHelper::get()->transform(\mpf\modules\calendar\models\EventCategory::findAll(), ['id' => 'name_ro']),
+            'value' => function (\mpf\modules\calendar\models\Event $event) {
                 return $event->category->getName();
             }
         ],
         'author_id' => [
             'filter' => \mpf\helpers\ArrayHelper::get()->transform(\app\models\User::findAll(), ['id' => 'name']),
-            'value' => function (\app\models\Event $event) {
+            'value' => function (\mpf\modules\calendar\models\Event $event) {
                 return $event->author->name;
             }
         ],
@@ -61,14 +61,14 @@
             'class' => 'Date'
         ],
         'status' => [
-            'filter' => \app\models\Event::$statusesLabels,
-            'value' => function (\app\models\Event $event) {
+            'filter' => \mpf\modules\calendar\models\Event::$statusesLabels,
+            'value' => function (\mpf\modules\calendar\models\Event $event) {
                 return $event->getStatus();
             }
         ],
         'visibility' => [
-            'filter' => \app\models\Event::$visibilitiesLabels,
-            'value' => function (\app\models\Event $event) {
+            'filter' => \mpf\modules\calendar\models\Event::$visibilitiesLabels,
+            'value' => function (\mpf\modules\calendar\models\Event $event) {
                 return $event->getVisibility();
             }
         ],
