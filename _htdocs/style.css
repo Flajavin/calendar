@@ -1,0 +1,209 @@
+.calendar-table td {
+    height: 90px;
+    padding: 5px;
+    border: 1px solid #363636;
+    color: #333333;
+}
+
+.calendar-table td.current-month {
+    background: rgba(55, 79, 106, 0.41);
+    color: #fff;
+}
+
+.calendar-table td.current-day {
+    background: #a90329;
+}
+
+table.calendar-table th {
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #d4d4d4 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #d4d4d4 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%, #d4d4d4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d4d4d4', GradientType=0); /* IE6-9 */
+    line-height: 30px;
+    min-height: 30px;
+    margin-top: 10px;
+    color: #D14D02;
+    font-weight: bold;
+    font-size: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.calendar-table ul {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.calendar-table ul li {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.calendar-table ul li a {
+    display: block;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    padding: 4px 5px;
+    line-height: 20px;
+    color: #0b3e6f;
+    font-size: 11px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 1px 0;
+}
+
+.calendar-table ul li a.event-started-before {
+    border-bottom-left-radius:  0;
+    border-top-left-radius: 0;
+    margin-left:-5px;
+}
+
+.calendar-table ul li a.event-ends-after {
+    border-bottom-right-radius:  0;
+    border-top-right-radius: 0;
+    margin-right:-5px;
+}
+
+.calendar-table td span.calendar-current-day {
+    text-shadow: none;
+}
+
+.calendar-table ul li a.event-link-general {
+    background: #fff;
+}
+
+.calendar-table ul li a.event-link-ac {
+    background: #1a97ae;
+    text-shadow: 0 0 3px #fff8f9;
+}
+
+.calendar-table ul li a.event-link-sm {
+    background: #9eff57;
+    color: #0b4900;
+}
+
+.calendar-table ul li a.event-link-pu {
+    background: #9bd4ff;
+}
+
+.calendar-table ul li a.event-link-rsi {
+    background: #ff7d54;
+    color: #fff;
+}
+
+.calendar-table ul li a.event-link-meeting {
+    background: #004f6b;
+    color:#fff;
+}
+
+.calendar-nextpreviousbar {
+    text-align: center;
+}
+
+.calendar-nextpreviousbar a.calendar-prevmonth {
+    float: left;
+}
+
+.calendar-nextpreviousbar a.calendar-nextmonth {
+    float: right;
+}
+
+.calendar-nextpreviousbar .calendar-currentmonthtitle {
+    line-height: 38px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.event-details-page .event-category-name{
+    font-style: normal;
+    margin-right: 15px;
+    padding: 0 5px;
+    border-radius:5px;
+    font-size: 11px;
+}
+
+.event-details-page .event-category-general {
+    background: #fff;
+}
+
+.event-details-page .event-category-ac {
+    background: #1a97ae;
+    text-shadow: 0 0 3px #fff8f9;
+}
+
+.event-details-page .event-category-sm {
+    background: #9eff57;
+    color: #0b4900;
+}
+
+.event-details-page .event-category-pu {
+    background: #9bd4ff;
+}
+
+.event-details-page .event-category-rsi {
+    background: #ff7d54;
+    color: #fff;
+}
+
+.event-details-page .event-category-meeting {
+    background: #004f6b;
+    color:#fff;
+}
+
+#site .event-details-page h2.event-title {
+    text-align: center;
+    font-size: 32px;
+    margin: 35px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.event-details-page .event-details {
+    padding: 2px 10px;
+    line-height: 20px;
+    text-align: right;
+    font-style: italic;
+    border-bottom: 1px solid #00e7ff;
+    margin-bottom: 25px;
+    color: #00e7ff;
+}
+
+.event-details-page .event-details span, .event-details-page .event-details a {
+    float: right;
+}
+
+.event-details-page .event-details img {
+    max-height: 20px;
+    float: right;
+    margin: 0 10px;
+}
+
+.event-details-page .event-details b {
+    float: left;
+    font-style: normal;
+}
+
+.event-details-page .event-icon {
+
+}
+
+.event-details-page .event-description {
+
+}
+
+.event-owner-actions-bar {
+    float: right;
+}
+
+.event-details-page .event-requirements{
+
+}
+

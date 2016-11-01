@@ -1,0 +1,81 @@
+.event-details-page {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.event-details-page .event-details {
+    display: block;
+    float: left;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media all and (min-width: 800px) {
+
+    .event-details-page .event-icon {
+        display: block;
+        float: left;
+        width: 400px;
+    }
+
+    .event-details-page .event-icon img {
+        max-width: 100%;
+    }
+
+    .event-details-page .event-description {
+        display: block;
+        float: left;
+        width: calc(100% - 400px);
+    }
+
+    .event-details-page .event-requirements{
+        display:block;
+        float:right;
+        width: 300px;
+    }
+
+}
+
+@media all and (min-width: 500px) and (max-width: 799px) {
+
+    .event-details-page .event-icon {
+        display: block;
+        float: left;
+        width: 200px;
+    }
+
+    .event-details-page .event-icon img {
+        max-width: 100%;
+    }
+
+    .event-details-page .event-description {
+        display: block;
+        float: left;
+        width: calc(100% - 200px);
+    }
+
+}
+
+@media all and (max-width: 499px) {
+
+    .event-details-page .event-icon {
+        display: block;
+        float: left;
+        width: 80%;
+        margin-left:10%;
+    }
+
+    .event-details-page .event-icon img {
+        max-width: 100%;
+    }
+
+    .event-details-page .event-description {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+}
