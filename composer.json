@@ -1,0 +1,22 @@
+{
+    "name": "flajavin/calendar",
+    "description": "Calendar Module for MPF Framework.",
+    "license": "Apache License",
+    "authors": [
+        {
+            "name": "Mirel Mitache",
+            "email": "mitache.mirel@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+	"mpf-soft/mpf" : "*",
+        "mpf-soft/social-widgets" : "*"
+    },
+    "autoload" : {
+	"psr-4" : {
+		"mpf\\modules\\calendar" : "/"
+	}
+    }
+}
+
