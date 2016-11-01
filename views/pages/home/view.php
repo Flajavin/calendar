@@ -1,14 +1,14 @@
 <?php use mpf\web\helpers\Html; ?>
 <?php use app\components\htmltools\Page; ?>
 <?php use mpf\helpers\DateTimeHelper; ?>
-<?php /* @var $event \app\models\Event */ ?>
+<?php /* @var $event \mpf\modules\calendar\models\Event */ ?>
 <?= Page::title('Events Calendar', [
     [
-        'url' => ['events', 'index'],
+        'url' => ['home', 'index'],
         'label' => 'Events List'
     ],
     [
-        'url' => ['events', 'create'],
+        'url' => ['home', 'create'],
         'label' => 'Create Event'
     ]
 ]); ?>
@@ -34,7 +34,7 @@
         <?= $event->getDetails(); ?>
     </div>
 
-    <?php if (($event->status == \app\models\Event::STATUS_OPEN) && (count($event->requirements))) { ?>
+    <?php if (($event->status == \mpf\modules\calendar\models\Event::STATUS_OPEN) && (count($event->requirements))) { ?>
         <div class="event-requirements">
             <h3><?= Page::get()->translate("Required Roles"); ?></h3>
             <?php foreach ($event->requirements as $requirement) { ?>

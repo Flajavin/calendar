@@ -32,7 +32,7 @@ use mpf\widgets\form\fields\Markdown;
  * @property string $event_end_time
  * @property int $status
  * @property int $visibility
- * @property \app\models\EventCategory $category
+ * @property EventCategory $category
  * @property \app\models\User $author
  * @property EventRequirement[] $requirements
  */

@@ -3,12 +3,12 @@
 ?>
 <?= \app\components\htmltools\Page::title('Events Calendar', [
     [
-        'url' => ['events', 'index'],
+        'url' => ['home', 'index'],
         'label' => 'Events List',
         'htmlOptions' => ['class' => 'selected']
     ],
     [
-        'url' => ['events', 'create'],
+        'url' => ['home', 'create'],
         'label' => 'Create Event'
     ],
     [

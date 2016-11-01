@@ -67,7 +67,7 @@ class Home extends Controller
             if ($m->saveRequirements()) {
                 $m->saveIcon();
                 Messages::get()->success("Event saved!");
-                $this->goToPage('events', 'view', ['id' => $m->id]);
+                $this->goToPage('home', 'view', ['id' => $m->id]);
                 if ($m->saveTemplate) {
                     if (EventTemplate::createFromDetails($m->templateName, $_POST['Event'])) {
                         Messages::get()->success("Template saved!");
@@ -93,14 +93,14 @@ class Home extends Controller
         $m = Event::findByPk($id);
         if (!$m) {
             Messages::get()->error("Event not found!");
-            $this->goToPage('events', 'index');
+            $this->goToPage('home', 'index');
         }
         $m->prepareRequirementsForEdit();
         if (isset($_POST['Event']) && $m->setAttributes($_POST['Event'])->save()) {
             $m->saveIcon();
             if ($m->saveRequirements()) {
                 Messages::get()->success("Event saved!");
-                $this->goToPage('events', 'view', ['id' => $m->id]);
+                $this->goToPage('home', 'view', ['id' => $m->id]);
             }
         }
         $this->assign('model', $m);

@@ -4,11 +4,11 @@
 ?>
 <?= \app\components\htmltools\Page::title('Events Calendar', [
     [
-        'url' => ['events', 'index'],
+        'url' => ['home', 'index'],
         'label' => 'Events List'
     ],
     [
-        'url' => ['events', 'create'],
+        'url' => ['home', 'create'],
         'label' => 'Create Event',
         'htmlOptions' => ['class' => 'selected']
     ]
@@ -67,13 +67,13 @@
         [
             'name' => 'visibility',
             'type' => 'select',
-            'options' => \app\models\Event::getVisibilityOptions()
+            'options' => \mpf\modules\calendar\models\Event::getVisibilityOptions()
         ],
         [
             'name' => 'requirementsUpdates',
             'type' => 'modelRelation',
             'legendLabel' => \app\components\htmltools\Page::get()->translate('Role'),
-            'modelClass' => \app\models\EventRequirement::className(),
+            'modelClass' => \mpf\modules\calendar\models\EventRequirement::className(),
             'fields' => [
                 'title_ro',
                 'title_en',
