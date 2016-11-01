@@ -15,7 +15,7 @@
     },
     "autoload" : {
 	"psr-4" : {
-		"mpf\\modules\\calendar" : "/"
+		"mpf\\modules\\calendar\\" : "/"
 	}
     }
 }
