@@ -261,7 +261,7 @@ class Event extends DbModel
             $htmlOptions['class'] .= ' event-started-before';
         if ($calendarDate < $e)
             $htmlOptions['class'] .= ' event-ends-after';
-        return Html::get()->link(['events', 'view', ['id' => $this->id]], $this->title, $htmlOptions);
+        return Html::get()->link(['home', 'view', ['id' => $this->id]], $this->title, $htmlOptions);
     }
 
     /**
