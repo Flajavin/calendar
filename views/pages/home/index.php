@@ -19,8 +19,12 @@
 
 <div class="calendar-nextpreviousbar">
     <span class="calendar-currentmonthtitle"><?= \app\components\htmltools\Page::get()->translate($calendar->getMonthName()) . ' ' . $calendar->year ?></span>
-    <?= \mpf\web\helpers\Html::get()->link(["home", "index", ['month' => $calendar->previous()->month, 'year' => $calendar->previous()->year]], \app\components\htmltools\Page::get()->translate($calendar->previous()->getMonthName()) . ' ' . $calendar->previous()->year . ' &#171;', ['class' => 'general-button calendar-prevmonth']); ?>
-    <?= \mpf\web\helpers\Html::get()->link(["home", "index", ['month' => $calendar->next()->month, 'year' => $calendar->next()->year]], '&#187; ' . \app\components\htmltools\Page::get()->translate($calendar->next()->getMonthName()) . ' ' . $calendar->next()->year, ['class' => 'general-button calendar-nextmonth']); ?>
+    <?php if ($calendar->previous()->year >= 1000) { ?>
+        <?= \mpf\web\helpers\Html::get()->link(["home", "index", ['month' => $calendar->previous()->month, 'year' => $calendar->previous()->year]], \app\components\htmltools\Page::get()->translate($calendar->previous()->getMonthName()) . ' ' . $calendar->previous()->year . ' &#171;', ['class' => 'general-button calendar-prevmonth']); ?>
+    <?php } ?>
+    <?php if ($calendar->previous()->year <= 3000) { ?>
+        <?= \mpf\web\helpers\Html::get()->link(["home", "index", ['month' => $calendar->next()->month, 'year' => $calendar->next()->year]], '&#187; ' . \app\components\htmltools\Page::get()->translate($calendar->next()->getMonthName()) . ' ' . $calendar->next()->year, ['class' => 'general-button calendar-nextmonth']); ?>
+    <?php } ?>
 </div>
 
 <div class="calendar-table-container">
